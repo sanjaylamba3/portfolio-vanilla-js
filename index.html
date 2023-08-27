@@ -1,38 +1,292 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
-</head>
-<body>
-    <div id="main" class="main">
-        <nav class="nav">
-            <h2>LOGO</h2>
-            <div class="nav-el">
-                <h4>Home</h4>
-                <h4>Projects</h4>
-                <h4>About Me</h4>
-                <i id="moon-icon" class="ri-moon-fill "></i>
-                <i id="sun-icon" class="ri-sun-fill "></i>
-                <i id="hamburger-icon" class="ri-menu-3-line "></i>
+   <html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <!--=============== FAVICON ===============-->
+      <!-- <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon"> -->
+
+      <!--=============== REMIXICONS ===============-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.4.0/remixicon.css" crossorigin="">
+
+      <!--=============== CSS ===============-->
+      <link rel="stylesheet" href="assets/css/styles.css">
+
+      <title>Responsive portfolio website Rian - Bedimcode</title>
+   </head>
+   <body>
+      <!--==================== HEADER ====================-->
+      <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">
+                <span class="nav__logo-name">Sanjay Lamba</span>
+            </a>
+
+            <div class="nav__menu" id="nav-menu">
+                <span class="nav__title">Menu</span>
+
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">About Me</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#projects" class="nav__link">Projects</a>
+                    </li>
+                </ul>
+
+                <!-- close btn -->
+                <div class="nav__close" id="nav-close">
+                    <i class="ri-close-line"></i>
+                </div>
+            </div>
+
+            <div class="nav__buttons">
+                <!-- theme button -->
+                <i class="ri-moon-line change-theme nav__link-button" id="theme-button"></i>
+                <!-- <i class="ri-sun-line change-theme" id="sun"></i> -->
+                <!-- toggle btn -->
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-menu-4-line"></i>
+                </div>
             </div>
         </nav>
-        <main class="content">
-            <div class="left">
-                <h1>Hi, my name is <span class="content-left-span">Sanjay Lamba</span>.</h1>
-                <h1>I am a <span class="content-left-span">web-developer</span>.</h1>
-                <button id="about-me" class="about-me">About Me</button>
-            </div>
-            <div class="right">
-                <img id="hero-img" class="hero-img" src="/img/Lovepik_com-401245821-the-programmer-is-typing-the-code.png" alt="">
-            </div>
-        </main>
-    </div>
+      </header>
 
-    <script src="script.js"></script>
-</body>
+      <!--==================== MAIN ====================-->
+      <main class="main">
+         <!--==================== HOME ====================-->
+         <section class="home section" id="home">
+            <div class="home__container container grid">
+                <h1 class="home__name">Sanjay Lamba</h1>
+
+                <div class="home__perfil">
+                    <div class="home__image">
+                        <img src="assets/img/hero-img.jpg" alt="hero-image" class="home__img hero-img">
+                        <div class="home__shadow"></div>
+
+                        <img src="assets/img/curved-arrow.svg" alt="" class="home__arrow">
+                        <img src="assets/img/random-lines.svg" alt="" class="home__line">
+
+                        <div class="geometric-box"></div>
+                    </div>
+
+                    <div class="home__social">
+                        <a href="https://www.linkedin.com/in/sanjay-lamba-9a15b715a/" target="_blank" class="home__social-link"><i class="ri-linkedin-box-fill"></i></a>
+                        <a href="https://github.com/sanjaylamba3" target="_blank" class="home__social-link"><i class="ri-github-fill"></i></a>
+                    </div>
+                </div>
+
+                <div class="home__info">
+                    <p class="home__description">
+                        <b>Frontend Developer</b>, with knowledge in web development and design.
+                    </p>
+
+                    <a href="#about" class="home__scroll">
+                        <div class="home__scroll-box">
+                            <i class="ri-arrow-down-s-line"></i>
+                        </div>
+
+                        <span class="home__scroll-text">Scroll Down</span>
+                    </a>
+                </div>
+            </div>
+         </section>
+
+         <!--==================== ABOUT ====================-->
+         <section class="about section" id="about">
+            <div class="about__container container grid">
+                <h2 class="section__title-1">
+                    About Me
+                </h2>
+
+                <div class="about__perfil">
+                    <div class="about__image">
+                        <img src="assets/img/hero-img-4.jpg" alt="" class="about__img">
+
+                        <div class="about__shadow"></div>
+
+                        <div class="geometric-box"></div>
+                        <img src="assets/img/random-lines.svg" alt="" class="about__line">
+                        <div class="about__box"></div>
+                    </div>
+                </div>
+                <div class="about__info">
+                    <p class="about__description">
+                        Passionate about learning & creating <b>Dynamic Web Pages and Apps</b> with <b>Modern UI/UX</b>
+                    </p>
+
+                    <ul class="about__list">
+                        <li class="about__item">
+                            <b>My Skills Are:</b> HTML, CSS, JavaScript, Git & GitHub, Tailwind & Figma.
+                        </li>
+                    </ul>
+
+                    <div class="about__buttons">
+                        <a target="_blank" href="https://docs.google.com/document/d/13Z9KNu_5638K8b5Z8LJOoDVtQJi0iYjJDUq9p9heGUE/edit?usp=sharing" class="button">
+                            <i class="ri-file-line"></i>View Resume 
+                        </a>
+                        <!-- <a href="#contact" class="button">
+                            <i class="ri-send-plane-line"></i>Contact Me
+                        </a> -->
+
+                        <!-- <a href="https://www.linkedin.com/in/sanjay-lamba-9a15b715a/" target="_blank" class="button__ghost">
+                            <i class="ri-linkedin-box-fill"></i>
+                        </a> -->
+                    </div>
+                </div>
+            </div>
+         </section>
+
+         <!--==================== SERVICES ====================-->
+         <!-- <section class="services section">
+            
+         </section> -->
+
+         <!--==================== PROJECTS ====================-->
+         <section class="projects section" id="projects">
+            <h2 class="section__title-2">
+                <span>Projects</span>
+            </h2>
+
+            <div class="projects__container container grid">
+                <article class="projects__card">
+                    <div class="projects__image">
+                        <img src="assets/img/project-1.png" alt="project-image" class="projects__img">
+
+                        <a target="_blank" href="https://sanjaylamba3.github.io/sanjaylamba-site/" class="projects__button button">
+                            <i class="ri-arrow-right-up-line"></i>
+                        </a>
+                    </div>
+
+                    <div class="projects__content">
+                        <!-- <h3 class="projects__subtitle"></h3> -->
+                        <h2 class="projects__title">Youtube Landing Page Clone</h2>
+
+                        <p class="projects__description">
+                            Responsive landing page for Youtube.com
+                        </p>
+                    </div>
+
+                    <div class="projects__buttons">
+                        <a href="https://github.com/sanjaylamba3/sanjaylamba-site" target="_blank" class="projects__link">
+                            <i class="ri-github-fill"></i> View
+                        </a>
+                    </div>
+                </article>
+
+                
+
+                <article class="projects__card">
+                    <div class="projects__image">
+                        <img src="assets/img/project-3.png" alt="project-image" class="projects__img">
+
+                        <a target="_blank" href="https://flixxtmdbapp.netlify.app/" class="projects__button button">
+                            <i class="ri-arrow-right-up-line"></i>
+                        </a>
+                    </div>
+
+                    <div class="projects__content">
+                        <!-- <h3 class="projects__subtitle"></h3> -->
+                        <h2 class="projects__title">Flixx App</h2>
+
+                        <p class="projects__description">
+                            Responsive Movie & TV search app using TMDB API
+                        </p>
+                    </div>
+
+                    <div class="projects__buttons">
+                        <a href="https://github.com/sanjaylamba3/flixx-app" target="_blank" class="projects__link">
+                            <i class="ri-github-fill"></i> View
+                        </a>
+                    </div>
+                </article>
+
+                <article class="projects__card">
+                    <div class="projects__image">
+                        <img src="assets/img/project-4.png" alt="project-image" class="projects__img">
+
+                        <a target="_blank" href="https://app-tracalorie.netlify.app/" class="projects__button button">
+                            <i class="ri-arrow-right-up-line"></i>
+                        </a>
+                    </div>
+
+                    <div class="projects__content">
+                        <!-- <h3 class="projects__subtitle"></h3> -->
+                        <h2 class="projects__title">Tracalorie App</h2>
+
+                        <p class="projects__description">
+                            Responsive calorie and workout tracking app
+                        </p>
+                    </div>
+
+                    <div class="projects__buttons">
+                        <a href="https://github.com/sanjaylamba3/tracalorie-webpack" target="_blank" class="projects__link">
+                            <i class="ri-github-fill"></i> View
+                        </a>
+                    </div>
+                </article>
+
+                <article class="projects__card">
+                    <div class="projects__image">
+                        <img src="assets/img/project-2.png" alt="project-image" class="projects__img">
+
+                        <a target="_blank" href="https://sanjaylamba3.github.io/shopping-list/" class="projects__button button">
+                            <i class="ri-arrow-right-up-line"></i>
+                        </a>
+                    </div>
+
+                    <div class="projects__content">
+                        <!-- <h3 class="projects__subtitle"></h3> -->
+                        <h2 class="projects__title">Shopping List</h2>
+
+                        <p class="projects__description">
+                            Responsive shopping list app 
+                        </p>
+                    </div>
+
+                    <div class="projects__buttons">
+                        <a href="https://github.com/sanjaylamba3/shopping-list" target="_blank" class="projects__link">
+                            <i class="ri-github-fill"></i> View
+                        </a>
+                    </div>
+                </article>
+            </div>
+         </section>
+
+         <!--==================== CONTACT ====================-->
+         <!-- <section class="contact section" id="contact"></section> -->
+      </main>
+
+      <!--==================== FOOTER ====================-->
+      <footer class="footer">
+        <div class="footer__container container grid">
+            <ul class="footer__links">
+                <li>
+                    <a href="#about" class="footer__link">About</a>
+                </li>
+                <li>
+                    <a href="#projects" class="footer__link">Projects</a>
+                </li>
+            </ul>
+        </div>
+      </footer>
+
+      <!--========== SCROLL UP ==========-->
+      <a href="#home" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-s-line"></i>
+      </a>
+
+      <!--=============== SCROLLREVEAL ===============-->
+      <script src="scrollreveal.min.js"></script>
+      
+      <!--=============== EMAIL JS ===============-->
+      
+
+      <!--=============== MAIN JS ===============-->
+      <script src="assets/js/main.js"></script>
+   </body>
 </html>
